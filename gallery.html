@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerija | ShopHub</title>
+<meta name="description" content="ShopHub je demo prezentacija onlajn marketplace-a sličnog Temu aplikaciji — ponuda, galerija, i kontakt forma.">
+<meta name="keywords" content="marketplace, e-commerce, online kupovina, popusti, aplikacija, Temu, ShopHub">
+<meta name="author" content="Tim studenata">
+<link rel="canonical" href="https://example.com/gallery.html"/>
+<link rel="icon" href="images/favicon.png">
+<meta property="og:title" content="Galerija | ShopHub">
+<meta property="og:description" content="ShopHub demo sajt s primerima Flex/Grid layouta, SEO meta podacima, burger menijem i responzivnim dizajnom.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/gallery.html">
+<meta property="og:image" content="https://example.com/images/og-image.png">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">ShopHub</a>
+    <nav class="main-nav" id="mainNav" aria-label="Glavni meni">
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="about.html">O nama</a></li>
+        <li><a href="gallery.html">Galerija</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burgerBtn" aria-label="Otvori meni" aria-controls="mainNav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="container with-sidemenu">
+  <aside class="sidemenu" aria-label="Kategorije">
+    <h2>Kategorije</h2>
+    <ul>
+      <li><button class="side-link" data-category="sve">Sve</button></li>
+      <li><button class="side-link" data-category="odeca">Odeća</button></li>
+      <li><button class="side-link" data-category="tech">Tech</button></li>
+      <li><button class="side-link" data-category="dom">Dom</button></li>
+    </ul>
+  </aside>
+  <section class="gallery">
+    <h1>Galerija proizvoda</h1>
+    <div id="items" class="grid-cards">
+      <!-- Cards rendered via JS -->
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> ShopHub • Edu demo. Svi prikazi su fiktivni.</p>
+  </div>
+</footer>
+
+</body>
+</html>

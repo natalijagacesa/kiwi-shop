@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt | ShopHub</title>
+<meta name="description" content="ShopHub je demo prezentacija onlajn marketplace-a sličnog Temu aplikaciji — ponuda, galerija, i kontakt forma.">
+<meta name="keywords" content="marketplace, e-commerce, online kupovina, popusti, aplikacija, Temu, ShopHub">
+<meta name="author" content="Tim studenata">
+<link rel="canonical" href="https://example.com/contact.html"/>
+<link rel="icon" href="images/favicon.png">
+<meta property="og:title" content="Kontakt | ShopHub">
+<meta property="og:description" content="ShopHub demo sajt s primerima Flex/Grid layouta, SEO meta podacima, burger menijem i responzivnim dizajnom.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/contact.html">
+<meta property="og:image" content="https://example.com/images/og-image.png">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">ShopHub</a>
+    <nav class="main-nav" id="mainNav" aria-label="Glavni meni">
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="about.html">O nama</a></li>
+        <li><a href="gallery.html">Galerija</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burgerBtn" aria-label="Otvori meni" aria-controls="mainNav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Kontakt forma</h1>
+  <p>Imate pitanje? Popunite formu.</p>
+  <form id="contactForm" class="contact-form" novalidate>
+    <div class="form-row">
+      <label for="ime">Ime</label>
+      <input type="text" id="ime" name="ime" required placeholder="Vaše ime">
+    </div>
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="ime@domen.com">
+    </div>
+    <fieldset class="form-row">
+      <legend>Interesuje me</legend>
+      <label><input type="radio" name="tema" value="porudzbina" required> Porudžbina</label>
+      <label><input type="radio" name="tema" value="reklamacija"> Reklamacija</label>
+      <label><input type="radio" name="tema" value="drugo"> Drugo</label>
+    </fieldset>
+    <div class="form-row">
+      <label for="kategorije">Kategorije</label>
+      <select id="kategorije" name="kategorije">
+        <option>Odeća</option>
+        <option>Tech</option>
+        <option>Dom</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label><input type="checkbox" id="novosti" name="novosti"> Želim newsletter</label>
+    </div>
+    <div class="form-row">
+      <label for="poruka">Poruka</label>
+      <textarea id="poruka" name="poruka" rows="6" placeholder="Upišite poruku..."></textarea>
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="btn">Pošalji</button>
+      <button type="reset" class="btn btn-secondary">Obriši</button>
+    </div>
+    <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+  </form>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> ShopHub • Edu demo. Svi prikazi su fiktivni.</p>
+  </div>
+</footer>
+
+</body>
+</html>
